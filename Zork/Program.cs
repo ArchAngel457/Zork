@@ -2,16 +2,6 @@
 
 namespace Zork
 {
-    enum Commands
-    {
-        QUIT,
-        LOOK,
-        NORTH,
-        SOUTH,
-        EAST,
-        WEST,
-        UNKNOWN
-    }
     class Program
     {
         static void Main(string[] args)
@@ -19,7 +9,7 @@ namespace Zork
             Console.WriteLine("Welcome to Zork!");
 
             string inputString = Console.ReadLine();
-            Commands command = ToCommand(inputString.Trim().ToUpper());
+            Commands command = ToCommand(inputString.Trim());
             Console.WriteLine(command);
         }
         private static Commands ToCommand(string commandString)
@@ -57,6 +47,9 @@ namespace Zork
 
             return command;
         }
-        private static Commands ToCommands(string commandString) => Enum.TryParse(commandString, true, out Commands result) ? result : Commands.UNKNOWN;
+        private static Commands ToCommand(string commandString)
+        {
+            return Enum.TryParse(commandString, true, out Commands result) ? result : Commands.UNKNOWN;
+        }
     }
 }
