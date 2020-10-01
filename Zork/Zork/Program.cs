@@ -9,7 +9,7 @@ namespace Zork
         {
             get
             {
-                return Rooms[Location.Row, Location.Column]; // why is this throwing an error? is this because the LOOk value has not been added? 
+                return Rooms[Location.Row, Location.Column]; // why is this throwing an error? is this because the Commands.LOOk value has not been added? 
             }
         }
 
