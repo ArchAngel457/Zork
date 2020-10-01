@@ -8,6 +8,7 @@ namespace Zork
     {
         public string Name { get; }
 
+        public override string ToString() => Name;
         public string Description { get; set; }
 
         public Room( string name, string description = "")
