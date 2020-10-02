@@ -7,7 +7,6 @@ namespace Zork
     public class Room
     {
         public string Name { get; }
-
         public override string ToString() => Name;
         public string Description { get; set; }
 
