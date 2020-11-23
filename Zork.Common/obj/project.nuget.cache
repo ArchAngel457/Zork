@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "q9CDCJj3y/tdiPi+E9Yb5CwsSSJU7zPmKM1z9uXLIzqg1tyLU5AptTVpxy4KHA0nzWKsOaWK9mda9fNE07hbCQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\snope\\Documents\\GitHub\\Zork\\Zork.Common\\Zork.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\snope\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\snope\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

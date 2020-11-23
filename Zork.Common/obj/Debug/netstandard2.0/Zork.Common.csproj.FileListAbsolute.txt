@@ -1,0 +1,3 @@
+C:\Users\snope\Documents\GitHub\Zork\Zork.Common\obj\Debug\netstandard2.0\Zork.Common.AssemblyInfoInputs.cache
+C:\Users\snope\Documents\GitHub\Zork\Zork.Common\obj\Debug\netstandard2.0\Zork.Common.AssemblyInfo.cs
+C:\Users\snope\Documents\GitHub\Zork\Zork.Common\obj\Debug\netstandard2.0\Zork.Common.csproj.CoreCompileInputs.cache
