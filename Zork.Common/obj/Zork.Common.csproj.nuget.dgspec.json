@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\snope\\Documents\\GitHub\\Zork\\Zork.Common\\Zork.Common.csproj": {}
+    "C:\\Users\\snope\\Desktop\\ZorkBuilder\\Zork.Common\\Zork.Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\snope\\Documents\\GitHub\\Zork\\Zork.Common\\Zork.Common.csproj": {
+    "C:\\Users\\snope\\Desktop\\ZorkBuilder\\Zork.Common\\Zork.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\snope\\Documents\\GitHub\\Zork\\Zork.Common\\Zork.Common.csproj",
+        "projectUniqueName": "C:\\Users\\snope\\Desktop\\ZorkBuilder\\Zork.Common\\Zork.Common.csproj",
         "projectName": "Zork.Common",
-        "projectPath": "C:\\Users\\snope\\Documents\\GitHub\\Zork\\Zork.Common\\Zork.Common.csproj",
+        "projectPath": "C:\\Users\\snope\\Desktop\\ZorkBuilder\\Zork.Common\\Zork.Common.csproj",
         "packagesPath": "C:\\Users\\snope\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\snope\\Documents\\GitHub\\Zork\\Zork.Common\\obj\\",
+        "outputPath": "C:\\Users\\snope\\Desktop\\ZorkBuilder\\Zork.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -44,11 +44,23 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Microsoft.CodeAnalysis.CSharp.Scripting": {
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "PropertyChanged.Fody": {
+              "target": "Package",
+              "version": "[3.1.3, )"
             }
           },
           "imports": [

@@ -1,20 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
+﻿using System.ComponentModel;
 using Newtonsoft.Json;
 
 namespace Zork
 {
-    public enum Directions
+    public class Player : INotifyPropertyChanged
     {
-        North,
-        South,
-        East,
-        West
-    }
-    public class Player
-    {
+        public event PropertyChangedEventHandler PropertyChanged;
 
         public World World { get; }
 
@@ -34,6 +25,12 @@ namespace Zork
             }
         }
 
+        public int Moves { get; set; }
+
+        public int Score { get; set; }
+
+        public int Health { get; set; } = 100;
+
         public Player(World world, string startingLocation)
         {
             World = world;
@@ -43,7 +40,7 @@ namespace Zork
         public bool Move(Directions direction)
         {
             bool isValidMove = Location.Neighbors.TryGetValue(direction, out Room destination);
-            if(isValidMove)
+            if (isValidMove)
             {
                 Location = destination;
             }
